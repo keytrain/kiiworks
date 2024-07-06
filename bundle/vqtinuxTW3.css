@@ -1,0 +1,136 @@
+:root {
+  --font-size: 16px;
+  --line-height: 1.5;
+
+  --bg-color: #111;
+
+  --heading-font: 'Avenir', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  --heading-color: #eee;
+
+  --body-font: ui-rounded, 'Hiragino Maru Gothic ProN', Quicksand, Comfortaa, Manjari, 'Arial Rounded MT', 'Arial Rounded MT Bold', Calibri, source-sans-pro, sans-serif;
+  --body-font-color: #ccc;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizelegibility;
+}
+
+html {
+  font-family: var(--body-font);
+  font-size: var(--font-size);
+  line-height: var(--line-height);
+  color: var(--body-font-color);
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--heading-font);
+  color: var(--heading-color);
+  font-weight: 700;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 1.75rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+h4 {
+  font-size: 1.25rem;
+}
+
+h5 {
+  font-size: 1rem;
+}
+
+h6 {
+  font-size: 0.8rem;
+}
+
+p,
+li {
+  margin: 1rem 0;
+}
+
+a {
+  text-decoration: none;
+  color: #eee;
+  border-bottom: 1px solid #888;
+}
+
+a:hover {
+  color: #fff;
+  border-bottom: 1px solid #666;
+}
+body {
+  margin: 0 auto;
+  background: var(--bg-color);
+  text-align: center;
+}
+
+nav {
+  margin-top: .5rem;
+  margin-bottom: 2rem;
+  position: fixed;
+  bottom: 1rem;
+  left: 0;
+  right: 0;
+}
+
+p {
+  max-width: 64ch;
+}
+
+small {
+  // text-transform: uppercase;
+  // font-size: 10px;
+  color: #777;
+}
+
+.page {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  max-width: 1200px;
+  margin: 0 auto;
+
+  a {
+    border-bottom: none;
+  }
+
+  img {
+    max-height: 100vh;
+    padding: 0rem 0;
+    padding-bottom: 3rem;
+  }
+}
+
+footer {
+  background: var(--bg-color);
+  position: fixed;
+  padding-bottom: 1rem;
+  padding-top: .5rem;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  font-size: 13px;
+}
